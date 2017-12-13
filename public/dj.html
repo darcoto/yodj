@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>YDJ Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="dj.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header">
+        YDJ - Search
+        <div id="login-link">Login</div>
+        <div id="status">N/A</div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-12" id="block_preview">
+          <div class="info-block" id="info-preview">
+            <h5>Local preview</h5>
+            <iframe id="ytplayer" type="text/html" width="360" height="260" src="" frameborder="0"></iframe>
+          </div>
+          <div class="info-block" id="info-display">
+            <h5>Remote display:(<span id="server_clients"></span>)</h5>
+            <div id="info-display-content">
+              <div class="empty-image"></div> Stop
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-xs-12" id="block_search">
+          <div class="row">
+            <div class="col-md-12 col-xs-12" id="searchform">
+              <label>
+                <input id="query" value='cats' type="text"/>
+                <button id="search-button" disabled>Search</button>
+              </label>
+            </div>
+          </div>
+          <div id="search-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="auth.js"></script>
+    <script src="dj.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

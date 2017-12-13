@@ -1,0 +1,26 @@
+html {
+    font-size: 12px;
+    font-family: Verdana;
+    background-color:#000;
+}
+
+#background {
+  position:absolute;
+  width:67%;
+  top:40%;
+  left:0;
+  text-align:right;
+  font-size:15em;
+  color:#444;
+  z-index:-1;
+}
+
+.header{
+  background-color: #339966;
+  color: #ffffff;
+  padding: 5px;
+}
+
+#fullscreen{
+  float:right;
+}
